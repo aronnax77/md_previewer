@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": ";AAAA,OAAQ;EACN,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,eAAe",
-"sources": ["../../sass/css/_profile.scss"],
-"names": [],
-"file": "sass02.css"
-}
