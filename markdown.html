@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/markdown.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Markdown Previewer</title>
+</head>
+<body>
+
+  <!-- Add a title to our application -->
+  <div class="title">
+    <h1>Markdown Previewer</h1>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div id="app">
+    <div class="labels">
+      <div class="markdown">Markdown</div>
+      <div class="preview">HTML Preview</div>
+    </div>
+    <div class="container">
+
+      <div class="input-output">
+        <div id="input">
+          <textarea name="" class="input"
+                    v-model="input"
+                    @change="preview"
+                    ></textarea>
+        </div>
+        <div id="output" class="wordwrap" v-html="preview"></div>
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <pre>
+      {{ $data }}
+    </pre>
+
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="js/markdown.js"></script>
+
+</body>
+</html>
