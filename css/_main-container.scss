@@ -1,0 +1,61 @@
+@import "variables";
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5vh 75vh;
+  grid-column-gap: $main-container-grid-gap;
+  width: $main-container-width;
+  height: $main-container-height;
+  margin: $main-container-top-margin auto 0 auto;
+  //border: 2px solid red;          // temporary
+
+  .label-text {
+    display: inline-block;
+    font-size: $label-text-size;
+    font-weight: bold;
+    margin-left: $label-text-left-margin;
+  }
+
+  .markdown, .preview {
+    display: flex;
+    align-items: center;
+    width: (($main-container-width - $main-container-grid-gap) / 2);
+    height: $label-height;
+    //border: 2px solid yellow;    // temporary
+  }
+
+  .input, .output {
+    width: (($main-container-width - $main-container-grid-gap) / 2);
+    height: $panel-height;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid black;
+  }
+
+  .output {
+    overflow: auto;
+
+    ul, ol {
+      padding-left: 20px;
+    }
+  }
+
+  textarea {
+    font-size: $textarea-font-size;
+    width: (($main-container-width - $main-container-grid-gap - 1.2vw) / 2);
+    height: $panel-height - 1.2vh;
+    resize: none;
+    border: none;
+  }
+
+  .wordwrap {
+   white-space: pre-wrap;      /* CSS3 */
+   white-space: -moz-pre-wrap; /* Firefox */
+   white-space: -pre-wrap;     /* Opera <7 */
+   white-space: -o-pre-wrap;   /* Opera 7 */
+   word-wrap: break-word;      /* IE */
+}
+}

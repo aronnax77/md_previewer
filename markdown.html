@@ -10,41 +10,33 @@
 <body>
 
   <!-- Add a title to our application -->
-  <div class="title">
-    <h1>Markdown Previewer</h1>
+  <div class="title-bar">
+    <div class="title">
+      <h1>Markdown Previewer</h1>
+    </div>
   </div>
 
-  <br>
-  <br>
-  <br>
+  <div id="app" class="main-container">
 
-  <div id="app">
-    <div class="labels">
-      <div class="markdown">Markdown</div>
-      <div class="preview">HTML Preview</div>
-    </div>
-    <div class="container">
-
-      <div class="input-output">
-        <div id="input">
-          <textarea name="" class="input"
-                    v-model="input"
-                    @change="preview"
-                    ></textarea>
-        </div>
-        <div id="output" class="wordwrap" v-html="preview"></div>
+    <div class="markdown">
+      <div class="label-text">
+        Markdown
       </div>
-
     </div>
 
-    <br>
-    <br>
-    <br>
+    <div class="preview">
+      <div class="label-text">
+        HTML Preview
+      </div>
+    </div>
 
-    <pre>
-      {{ $data }}
-    </pre>
+    <div class="input">
+      <textarea class="text-input"
+                v-model="input"
+                ></textarea>
+    </div>
 
+    <div class="output wordwrap" v-html="preview"></div>
 
   </div>
 

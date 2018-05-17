@@ -1,0 +1,19 @@
+@import "variables";
+
+// styling relating to the title bar
+.title-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $title-bar-height;
+  background-color: $title-bar-color;
+
+  div {
+    display: inline-block;
+  }
+
+  h1 {
+    font-size: $title-font-size;
+    color: $title-color;
+  }
+}
