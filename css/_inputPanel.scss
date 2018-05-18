@@ -1,0 +1,17 @@
+@import "variables";
+
+
+// styling for the input markdown panel
+.input {
+  // this extension is defined in _variables.scss
+  // and is used here and in the outputPanel
+  @extend %common;
+
+  textarea {
+    font-size: $textarea-font-size;
+    width: (($main-container-width - $main-container-grid-gap - 1.2vw) / 2);
+    height: $panel-height - 1.2vh;
+    resize: none;
+    border: none;
+  }
+}

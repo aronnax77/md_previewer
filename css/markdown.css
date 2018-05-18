@@ -1,3 +1,13 @@
+/* line 15, _variables.scss */
+.main-container .input, .main-container .output {
+  width: 29.75vw;
+  height: 75vh;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid black; }
+
 /* line 3, markdown.scss */
 * {
   padding: 0;
@@ -8,6 +18,16 @@
 /* line 9, markdown.scss */
 body {
   background-color: #ddd; }
+
+/* line 15, _variables.scss */
+.main-container .input, .main-container .output {
+  width: 29.75vw;
+  height: 75vh;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid black; }
 
 /* line 4, _title.scss */
 .title-bar {
@@ -30,6 +50,16 @@ body {
     font-size: 1.25vw;
     color: lightgreen; }
 
+/* line 15, _variables.scss */
+.main-container .input, .main-container .output {
+  width: 29.75vw;
+  height: 75vh;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid black; }
+
 /* line 3, _main-container.scss */
 .main-container {
   display: grid;
@@ -39,13 +69,22 @@ body {
   width: 60vw;
   height: 80vh;
   margin: 3vw auto 0 auto; }
-  /* line 13, _main-container.scss */
+  /* line 15, _variables.scss */
+  .main-container .input, .main-container .output {
+    width: 29.75vw;
+    height: 75vh;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid black; }
+  /* line 3, _labels.scss */
   .main-container .label-text {
     display: inline-block;
     font-size: 1vw;
     font-weight: bold;
     margin-left: 10px; }
-  /* line 20, _main-container.scss */
+  /* line 10, _labels.scss */
   .main-container .markdown, .main-container .preview {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -55,7 +94,7 @@ body {
             align-items: center;
     width: 29.75vw;
     height: 5vh; }
-  /* line 28, _main-container.scss */
+  /* line 15, _variables.scss */
   .main-container .input, .main-container .output {
     width: 29.75vw;
     height: 75vh;
@@ -64,20 +103,26 @@ body {
     padding: 10px;
     overflow: hidden;
     border: 1px solid black; }
-  /* line 38, _main-container.scss */
-  .main-container .output {
-    overflow: auto; }
-    /* line 41, _main-container.scss */
-    .main-container .output ul, .main-container .output ol {
-      padding-left: 20px; }
-  /* line 46, _main-container.scss */
-  .main-container textarea {
+  /* line 10, _inputPanel.scss */
+  .main-container .input textarea {
     font-size: 0.8vw;
     width: 29.15vw;
     height: 73.8vh;
     resize: none;
     border: none; }
-  /* line 54, _main-container.scss */
+  /* line 15, _variables.scss */
+  .main-container .input, .main-container .output {
+    width: 29.75vw;
+    height: 75vh;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid black; }
+  /* line 3, _outputPanel.scss */
+  .main-container .output {
+    overflow: auto; }
+  /* line 10, _outputPanel.scss */
   .main-container .wordwrap {
     white-space: pre-wrap;
     /* CSS3 */
@@ -89,5 +134,25 @@ body {
     /* Opera 7 */
     word-wrap: break-word;
     /* IE */ }
+
+@media only screen and (max-width: 1400px) {
+  /* For mobile phones: x 1.5625 */
+  /* line 25, _main-container.scss */
+  .main-container {
+    width: 85vw; }
+    /* line 28, _main-container.scss */
+    .main-container .input, .main-container .output {
+      width: 42.25vw; } }
+@media only screen and (max-width: 700px) {
+  /* For mobile phones: x 3.125 */
+  /* line 38, _main-container.scss */
+  .main-container {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75vh 75vh; }
+    /* line 43, _main-container.scss */
+    .main-container .input, .main-container .output {
+      width: 100vw; } }
+/* styling for responsive design ends */
 
 /*# sourceMappingURL=markdown.css.map */

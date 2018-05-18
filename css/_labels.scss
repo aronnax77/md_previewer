@@ -1,0 +1,16 @@
+@import "variables";
+
+.label-text {
+  display: inline-block;
+  font-size: $label-text-size;
+  font-weight: bold;
+  margin-left: $label-text-left-margin;
+}
+
+.markdown, .preview {
+  display: flex;
+  align-items: center;
+  width: (($main-container-width - $main-container-grid-gap) / 2);
+  height: $label-height;
+  //border: 2px solid yellow;    // temporary
+}

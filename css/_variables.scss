@@ -11,3 +11,13 @@ $panel-height: $main-container-height - $label-height;
 $label-text-left-margin: 10px;
 $label-text-size: 1vw;
 $textarea-font-size: 0.8vw;
+
+%common {
+  width: (($main-container-width - $main-container-grid-gap) / 2);
+  height: $panel-height;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid black;
+}

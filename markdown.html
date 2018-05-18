@@ -18,13 +18,13 @@
 
   <div id="app" class="main-container">
 
-    <div class="markdown">
+    <div class="markdown" v-show="labelsEnabled">
       <div class="label-text">
         Markdown
       </div>
     </div>
 
-    <div class="preview">
+    <div class="preview" v-show="labelsEnabled">
       <div class="label-text">
         HTML Preview
       </div>
@@ -37,6 +37,12 @@
     </div>
 
     <div class="output wordwrap" v-html="preview"></div>
+
+    <br>
+    <br>
+    <br>
+
+    <pre>{{ $data }}</pre>
 
   </div>
 
