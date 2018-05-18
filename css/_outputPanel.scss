@@ -5,6 +5,8 @@
   // and is used here and in the outputPanel
   @extend %common;
   overflow: auto;
+
+  @import "htmlStyles";
 }
 
 .wordwrap {

@@ -10,7 +10,7 @@ $label-height: 5vh;
 $panel-height: $main-container-height - $label-height;
 $label-text-left-margin: 10px;
 $label-text-size: 1vw;
-$textarea-font-size: 0.8vw;
+$textarea-font-size: 1vw;
 
 %common {
   width: (($main-container-width - $main-container-grid-gap) / 2);

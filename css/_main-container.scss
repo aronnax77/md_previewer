@@ -10,39 +10,4 @@
   margin: $main-container-top-margin auto 0 auto;
   //border: 2px solid red;          // temporary
 
-  @import "labels";
-
-  @import "inputPanel";
-
-  @import "outputPanel";
-
 }
-
-@media only screen and (max-width:1400px) {
-  /* For mobile phones: x 1.5625 */
-  $main-container-width: 85vw;
-
-  .main-container {
-    width: $main-container-width;
-
-    .input, .output {
-      width: (($main-container-width - $main-container-grid-gap) / 2);
-    }
-  }
-}
-
-@media only screen and (max-width:700px) {
-  /* For mobile phones: x 3.125 */
-  $main-container-width: 100vw;
-
-  .main-container {
-    width: $main-container-width;
-    grid-template-columns: 1fr;
-    grid-template-rows: 75vh 75vh;
-
-    .input, .output {
-      width: $main-container-width;
-    }
-  }
-}
-/* styling for responsive design ends */

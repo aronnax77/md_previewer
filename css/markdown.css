@@ -1,5 +1,5 @@
 /* line 15, _variables.scss */
-.main-container .input, .main-container .output {
+.input, .output {
   width: 29.75vw;
   height: 75vh;
   background-color: #fff;
@@ -20,7 +20,7 @@ body {
   background-color: #ddd; }
 
 /* line 15, _variables.scss */
-.main-container .input, .main-container .output {
+.input, .output {
   width: 29.75vw;
   height: 75vh;
   background-color: #fff;
@@ -51,7 +51,7 @@ body {
     color: lightgreen; }
 
 /* line 15, _variables.scss */
-.main-container .input, .main-container .output {
+.input, .output {
   width: 29.75vw;
   height: 75vh;
   background-color: #fff;
@@ -69,90 +69,152 @@ body {
   width: 60vw;
   height: 80vh;
   margin: 3vw auto 0 auto; }
-  /* line 15, _variables.scss */
-  .main-container .input, .main-container .output {
-    width: 29.75vw;
-    height: 75vh;
-    background-color: #fff;
-    border-radius: 3px;
-    padding: 10px;
-    overflow: hidden;
-    border: 1px solid black; }
-  /* line 3, _labels.scss */
-  .main-container .label-text {
-    display: inline-block;
-    font-size: 1vw;
-    font-weight: bold;
-    margin-left: 10px; }
-  /* line 10, _labels.scss */
-  .main-container .markdown, .main-container .preview {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 29.75vw;
-    height: 5vh; }
-  /* line 15, _variables.scss */
-  .main-container .input, .main-container .output {
-    width: 29.75vw;
-    height: 75vh;
-    background-color: #fff;
-    border-radius: 3px;
-    padding: 10px;
-    overflow: hidden;
-    border: 1px solid black; }
-  /* line 10, _inputPanel.scss */
-  .main-container .input textarea {
-    font-size: 0.8vw;
-    width: 29.15vw;
-    height: 73.8vh;
-    resize: none;
-    border: none; }
-  /* line 15, _variables.scss */
-  .main-container .input, .main-container .output {
-    width: 29.75vw;
-    height: 75vh;
-    background-color: #fff;
-    border-radius: 3px;
-    padding: 10px;
-    overflow: hidden;
-    border: 1px solid black; }
-  /* line 3, _outputPanel.scss */
-  .main-container .output {
-    overflow: auto; }
-  /* line 10, _outputPanel.scss */
-  .main-container .wordwrap {
-    white-space: pre-wrap;
-    /* CSS3 */
-    white-space: -moz-pre-wrap;
-    /* Firefox */
-    white-space: -pre-wrap;
-    /* Opera <7 */
-    white-space: -o-pre-wrap;
-    /* Opera 7 */
-    word-wrap: break-word;
-    /* IE */ }
+
+/* line 15, _variables.scss */
+.input, .output {
+  width: 29.75vw;
+  height: 75vh;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid black; }
+
+/* line 3, _labels.scss */
+.label-text {
+  display: inline-block;
+  font-size: 1vw;
+  font-weight: bold;
+  margin-left: 10px; }
+
+/* line 10, _labels.scss */
+button {
+  font-size: 1vw;
+  padding: 2px;
+  border-radius: 3px;
+  margin-right: 10px;
+  background-color: lightgreen; }
+
+/* line 18, _labels.scss */
+.markdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 29.75vw;
+  height: 5vh; }
+
+/* line 26, _labels.scss */
+.preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 29.75vw;
+  height: 5vh; }
+
+/* line 15, _variables.scss */
+.input, .output {
+  width: 29.75vw;
+  height: 75vh;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid black; }
+
+/* line 11, _inputPanel.scss */
+textarea {
+  font-size: 1vw;
+  width: 29.15vw;
+  height: 73.8vh;
+  resize: none;
+  border: none; }
+
+/* line 15, _variables.scss */
+.input, .output {
+  width: 29.75vw;
+  height: 75vh;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid black; }
+
+/* line 3, _outputPanel.scss */
+.output {
+  overflow: auto; }
+  /* line 1, _htmlStyles.scss */
+  .output ul, .output ol {
+    padding-left: 30px; }
+
+/* line 12, _outputPanel.scss */
+.wordwrap {
+  white-space: pre-wrap;
+  /* CSS3 */
+  white-space: -moz-pre-wrap;
+  /* Firefox */
+  white-space: -pre-wrap;
+  /* Opera <7 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* IE */ }
 
 @media only screen and (max-width: 1400px) {
-  /* For mobile phones: x 1.5625 */
-  /* line 25, _main-container.scss */
+  /* For mobile phones: x 2 */
+  /* line 30, markdown.scss */
+  .label-text {
+    font-size: 2vw; }
+
+  /* line 35, markdown.scss */
   .main-container {
-    width: 85vw; }
-    /* line 28, _main-container.scss */
-    .main-container .input, .main-container .output {
-      width: 42.25vw; } }
-@media only screen and (max-width: 700px) {
-  /* For mobile phones: x 3.125 */
-  /* line 38, _main-container.scss */
+    width: 85vw;
+    margin: 6vw auto 0 auto; }
+
+  /* line 41, markdown.scss */
+  .input {
+    width: 42.25vw; }
+
+  /* line 45, markdown.scss */
+  textarea {
+    font-size: 2vw;
+    width: 41.65vw;
+    height: 73.8vh; }
+
+  /* line 52, markdown.scss */
+  .output {
+    width: 42.25vw; } }
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: x 3.5 */
+  /* line 64, markdown.scss */
   .main-container {
     width: 100vw;
+    height: 50vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 75vh 75vh; }
-    /* line 43, _main-container.scss */
-    .main-container .input, .main-container .output {
-      width: 100vw; } }
-/* styling for responsive design ends */
+    grid-template-rows: 50vh 50vh; }
 
+  /* line 72, markdown.scss */
+  .input {
+    width: 100vw;
+    height: 50vh; }
+
+  /* line 77, markdown.scss */
+  textarea {
+    font-size: 3vw;
+    width: 98.8vw;
+    height: 48.8vh; }
+
+  /* line 84, markdown.scss */
+  .output {
+    width: 100vw;
+    height: 50vh; } }
+/* styling for responsive design ends */
 /*# sourceMappingURL=markdown.css.map */
