@@ -6,6 +6,7 @@
   // this extension is defined in _variables.scss
   // and is used here and in the outputPanel
   @extend %common;
+  grid-area: i;
 }
 
 textarea {

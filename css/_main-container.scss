@@ -2,12 +2,14 @@
 
 .main-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 5vh 75vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: $buttons-height $main-container-height;
   grid-column-gap: $main-container-grid-gap;
+  grid-template-areas: "b b"
+                       "i o";
   width: $main-container-width;
   height: $main-container-height;
-  margin: $main-container-top-margin auto 0 auto;
+  margin: 0 auto;
   //border: 2px solid red;          // temporary
 
 }

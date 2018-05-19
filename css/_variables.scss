@@ -1,21 +1,45 @@
-$title-bar-color: #333;
+// COLOURS
+$white: #fff;
+$lightgrey: #333;
+$lightblue: #add8e6;
+
+
+
+// TITLE
+$title-bar-color: $lightgrey;
 $title-bar-height: 3vw;
-$title-color: lightgreen;
+$title-color: $lightblue;
 $title-font-size: 1.25vw;
+$title-bar-height-md: $title-bar-height * 1.6;
+$title-bar-height-sm: $title-bar-height * 3;
+$title-font-size-md: $title-font-size * 1.6;
+$title-font-size-sm: $title-font-size * 3;
+
+
+// MAIN CONTAINER
 $main-container-width: 60vw;
-$main-container-height: 80vh;
+$main-container-height: 60vh;
 $main-container-top-margin: 3vw;
 $main-container-grid-gap: 0.5vw;
+
+// BUTTONS
+$buttons-width: $main-container-width;
+$buttons-height: 70px;
+$buttons-bg-color: $lightblue;
+
+// LABELS
 $label-height: 5vh;
-$panel-height: $main-container-height - $label-height;
 $label-text-left-margin: 10px;
 $label-text-size: 1vw;
+
+// PANELS AND TEXTAREA
+$panel-height: $main-container-height;
 $textarea-font-size: 1vw;
 
 %common {
   width: (($main-container-width - $main-container-grid-gap) / 2);
   height: $panel-height;
-  background-color: #fff;
+  background-color: $white;
   border-radius: 3px;
   padding: 10px;
   overflow: hidden;

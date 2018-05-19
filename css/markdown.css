@@ -1,7 +1,7 @@
-/* line 15, _variables.scss */
+/* line 39, _variables.scss */
 .input, .output {
   width: 29.75vw;
-  height: 75vh;
+  height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
@@ -19,10 +19,10 @@
 body {
   background-color: #ddd; }
 
-/* line 15, _variables.scss */
+/* line 39, _variables.scss */
 .input, .output {
   width: 29.75vw;
-  height: 75vh;
+  height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
@@ -48,12 +48,26 @@ body {
   /* line 15, _title.scss */
   .title-bar h1 {
     font-size: 1.25vw;
-    color: lightgreen; }
+    color: #add8e6; }
 
-/* line 15, _variables.scss */
+@media only screen and (max-width: 1400px) {
+  /* line 23, _title.scss */
+  .title-bar {
+    height: 4.8vw; }
+    /* line 26, _title.scss */
+    .title-bar h1 {
+      font-size: 2vw; } }
+@media only screen and (max-width: 600px) {
+  /* line 36, _title.scss */
+  .title-bar {
+    height: 9vw; }
+    /* line 39, _title.scss */
+    .title-bar h1 {
+      font-size: 3.75vw; } }
+/* line 39, _variables.scss */
 .input, .output {
   width: 29.75vw;
-  height: 75vh;
+  height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
@@ -63,85 +77,70 @@ body {
 /* line 3, _main-container.scss */
 .main-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 5vh 75vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 70px 60vh;
   grid-column-gap: 0.5vw;
+  grid-template-areas: "b b" "i o";
   width: 60vw;
-  height: 80vh;
-  margin: 3vw auto 0 auto; }
+  height: 60vh;
+  margin: 0 auto; }
 
-/* line 15, _variables.scss */
+/* line 39, _variables.scss */
 .input, .output {
   width: 29.75vw;
-  height: 75vh;
+  height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
   overflow: hidden;
   border: 1px solid black; }
 
-/* line 3, _labels.scss */
-.label-text {
-  display: inline-block;
-  font-size: 1vw;
-  font-weight: bold;
-  margin-left: 10px; }
-
-/* line 10, _labels.scss */
-button {
-  font-size: 1vw;
-  padding: 2px;
-  border-radius: 3px;
-  margin-right: 10px;
-  background-color: lightgreen; }
-
-/* line 18, _labels.scss */
-.markdown {
+/* line 3, _buttons.scss */
+.buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 29.75vw;
-  height: 5vh; }
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  grid-area: b;
+  width: 60vw;
+  height: 70px; }
+  /* line 10, _buttons.scss */
+  .buttons .welcome-btn button, .buttons .clear-btn button {
+    width: 80px;
+    background-color: #add8e6;
+    font-size: 1em;
+    padding: 0.3em;
+    border-radius: 3px;
+    margin: 10px 2px; }
 
-/* line 26, _labels.scss */
-.preview {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 29.75vw;
-  height: 5vh; }
-
-/* line 15, _variables.scss */
+/* line 39, _variables.scss */
 .input, .output {
   width: 29.75vw;
-  height: 75vh;
+  height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
   overflow: hidden;
   border: 1px solid black; }
 
-/* line 11, _inputPanel.scss */
+/* line 5, _inputPanel.scss */
+.input {
+  grid-area: i; }
+
+/* line 12, _inputPanel.scss */
 textarea {
   font-size: 1vw;
   width: 29.15vw;
-  height: 73.8vh;
+  height: 58.8vh;
   resize: none;
   border: none; }
 
-/* line 15, _variables.scss */
+/* line 39, _variables.scss */
 .input, .output {
   width: 29.75vw;
-  height: 75vh;
+  height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
@@ -150,12 +149,13 @@ textarea {
 
 /* line 3, _outputPanel.scss */
 .output {
-  overflow: auto; }
+  overflow: auto;
+  grid-area: o; }
   /* line 1, _htmlStyles.scss */
   .output ul, .output ol {
     padding-left: 30px; }
 
-/* line 12, _outputPanel.scss */
+/* line 13, _outputPanel.scss */
 .wordwrap {
   white-space: pre-wrap;
   /* CSS3 */
@@ -187,7 +187,7 @@ textarea {
   textarea {
     font-size: 2vw;
     width: 41.65vw;
-    height: 73.8vh; }
+    height: 53.8vh; }
 
   /* line 52, markdown.scss */
   .output {
@@ -217,4 +217,5 @@ textarea {
     width: 100vw;
     height: 50vh; } }
 /* styling for responsive design ends */
+
 /*# sourceMappingURL=markdown.css.map */

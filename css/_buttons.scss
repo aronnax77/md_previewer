@@ -1,0 +1,18 @@
+@import "variables";
+
+.buttons {
+  display: flex;
+  align-items: flex-end;
+  grid-area: b;
+  width: $buttons-width;
+  height: $buttons-height;
+  
+  .welcome-btn button, .clear-btn button {
+    width: 80px;
+    background-color: $buttons-bg-color;
+    font-size: 1em;
+    padding: 0.3em;
+    border-radius: 3px;
+    margin: 10px 2px;
+  }
+}

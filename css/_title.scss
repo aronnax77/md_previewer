@@ -17,3 +17,28 @@
     color: $title-color;
   }
 }
+
+@media only screen and (max-width:1400px) {
+
+  .title-bar {
+    height: $title-bar-height-md;
+
+    h1 {
+      font-size: $title-font-size-md;
+    }
+  }
+
+
+}
+
+@media only screen and (max-width:600px) {
+
+  .title-bar {
+    height: $title-bar-height-sm;
+
+    h1 {
+      font-size: $title-font-size-sm;
+    }
+  }
+
+}

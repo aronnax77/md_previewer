@@ -18,7 +18,7 @@
 
   <div id="app" class="main-container">
 
-    <div class="markdown" v-show="labelsEnabled">
+    <!--<div class="markdown" v-show="labelsEnabled">
       <div class="label-text">
         Markdown
       </div>
@@ -27,6 +27,15 @@
     <div class="preview" v-show="labelsEnabled">
       <div class="label-text">
         HTML Preview
+      </div>
+    </div>-->
+
+    <div class="buttons">
+      <div class="welcome-btn">
+        <button @click="setInitialText">Welcome</button>
+      </div>
+      <div class="clear-btn">
+        <button @click="input = ''">Clear</button>
       </div>
     </div>
 

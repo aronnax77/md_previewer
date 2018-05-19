@@ -5,6 +5,7 @@
   // and is used here and in the outputPanel
   @extend %common;
   overflow: auto;
+  grid-area: o;
 
   @import "htmlStyles";
 }

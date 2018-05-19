@@ -13,6 +13,9 @@ var main = new Vue({
       } else {
         this.labelsEnabled = true;
       }
+    },
+    setInitialText: function() {
+      this.input = initialText;
     }
   },
   computed: {
