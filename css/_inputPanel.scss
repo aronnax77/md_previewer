@@ -16,3 +16,30 @@ textarea {
   resize: none;
   border: none;
 }
+
+@mixin inputPanel--md() {
+
+  .input {
+    width: (($main-container-width-md - $main-container-grid-gap) / 2);
+  }
+
+  textarea {
+    width: (($main-container-width-md - $main-container-grid-gap - 1.2vw) / 2);
+    height: $panel-height - 1.2vh;
+  }
+
+}
+
+@mixin inputPanel--sm() {
+
+  .input {
+    width: $main-container-width-sm;
+    height: $panel-height;
+  }
+
+  textarea {
+    width: ($main-container-width-sm - 1.2vw);
+    height: $panel-height - 1.2vh;
+  }
+
+}

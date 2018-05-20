@@ -30,3 +30,15 @@ button {
   height: $label-height;
   //border: 2px solid yellow;    // temporary
 }
+
+@media only screen and (max-width:$medium-screen-width) {
+
+  .label-text {
+    font-size: $label-text-size * 2;
+  }
+  
+}
+
+@media only screen and (max-width:$small-screen-width) {
+
+}

@@ -18,9 +18,13 @@ $title-font-size-sm: $title-font-size * 3;
 
 // MAIN CONTAINER
 $main-container-width: 60vw;
+$main-container-width-md: 85vw;
+$main-container-width-sm: 100vw;
 $main-container-height: 60vh;
+$main-container-height-sm: 60vh;
 $main-container-top-margin: 3vw;
 $main-container-grid-gap: 0.5vw;
+
 
 // BUTTONS
 $buttons-width: $main-container-width;
@@ -34,7 +38,11 @@ $label-text-size: 1vw;
 
 // PANELS AND TEXTAREA
 $panel-height: $main-container-height;
-$textarea-font-size: 1vw;
+$textarea-font-size: 16px;
+
+// RESPONSIVE DESIGN
+$medium-screen-width: 1400px;
+$small-screen-width: 600px;
 
 %common {
   width: (($main-container-width - $main-container-grid-gap) / 2);

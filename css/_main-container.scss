@@ -13,3 +13,26 @@
   //border: 2px solid red;          // temporary
 
 }
+
+@mixin main-container--md() {
+
+  .main-container {
+    width: $main-container-width-md;
+    margin: $main-container-top-margin * 2 auto 0 auto;
+  }
+
+}
+
+@mixin main-container--sm() {
+
+  .main-container {
+    width: $main-container-width-sm;
+    height: $main-container-height;
+    grid-template-columns: 1fr;
+    grid-template-rows: $buttons-height $main-container-height-sm $main-container-height-sm;
+    grid-template-areas: "b"
+                         "i"
+                         "o";
+  }
+
+}

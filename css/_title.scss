@@ -18,7 +18,7 @@
   }
 }
 
-@media only screen and (max-width:1400px) {
+@mixin title--md() {
 
   .title-bar {
     height: $title-bar-height-md;
@@ -31,7 +31,7 @@
 
 }
 
-@media only screen and (max-width:600px) {
+@mixin title--sm() {
 
   .title-bar {
     height: $title-bar-height-sm;

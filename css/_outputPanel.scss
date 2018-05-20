@@ -4,7 +4,7 @@
   // this extension is defined in _variables.scss
   // and is used here and in the outputPanel
   @extend %common;
-  overflow: auto;
+  overflow: scroll;
   grid-area: o;
 
   @import "htmlStyles";
@@ -16,4 +16,21 @@
  white-space: -pre-wrap;     /* Opera <7 */
  white-space: -o-pre-wrap;   /* Opera 7 */
  word-wrap: break-word;      /* IE */
+}
+
+@mixin outputPanel--md() {
+
+  .output{
+    width: (($main-container-width-md - $main-container-grid-gap) / 2);
+  }
+
+}
+
+@mixin outputPanel--sm() {
+
+  .output {
+    width: $main-container-width-sm;
+    height: $main-container-height-sm;
+  }
+
 }
