@@ -1,3 +1,28 @@
+@import "variables";
+
+p {
+  text-align:justify;
+}
+
 ul, ol {
   padding-left: 30px;
+}
+
+pre code {
+  font-family: monospace;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  background-color: $lightgrey;
+}
+
+blockquote {
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0 20px;
+}
+
+img {
+  margin: 10px;
+  max-width: $panel-width;
 }

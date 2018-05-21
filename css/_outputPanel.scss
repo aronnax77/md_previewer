@@ -4,7 +4,7 @@
   // this extension is defined in _variables.scss
   // and is used here and in the outputPanel
   @extend %common;
-  overflow: scroll;
+  overflow: auto;
   grid-area: o;
 
   @import "htmlStyles";

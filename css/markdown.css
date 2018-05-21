@@ -1,35 +1,28 @@
-/* line 47, _variables.scss */
 .input, .output {
   width: 29.75vw;
   height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
-  overflow: hidden;
   border: 1px solid black; }
 
-/* line 3, markdown.scss */
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-/* line 9, markdown.scss */
 body {
   background-color: #ddd; }
 
-/* line 47, _variables.scss */
 .input, .output {
   width: 29.75vw;
   height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
-  overflow: hidden;
   border: 1px solid black; }
 
-/* line 4, _title.scss */
 .title-bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,25 +35,20 @@ body {
           align-items: center;
   height: 3vw;
   background-color: #333; }
-  /* line 11, _title.scss */
   .title-bar div {
     display: inline-block; }
-  /* line 15, _title.scss */
   .title-bar h1 {
     font-size: 1.25vw;
     color: #add8e6; }
 
-/* line 47, _variables.scss */
 .input, .output {
   width: 29.75vw;
   height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
-  overflow: hidden;
   border: 1px solid black; }
 
-/* line 3, _main-container.scss */
 .main-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -71,17 +59,14 @@ body {
   height: 60vh;
   margin: 0 auto; }
 
-/* line 47, _variables.scss */
 .input, .output {
   width: 29.75vw;
   height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
-  overflow: hidden;
   border: 1px solid black; }
 
-/* line 3, _buttons.scss */
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,7 +77,6 @@ body {
   grid-area: b;
   width: 60vw;
   height: 70px; }
-  /* line 10, _buttons.scss */
   .buttons .welcome-btn button, .buttons .clear-btn button {
     width: 80px;
     background-color: #add8e6;
@@ -101,47 +85,61 @@ body {
     border-radius: 3px;
     margin: 10px 2px; }
 
-/* line 47, _variables.scss */
 .input, .output {
   width: 29.75vw;
   height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
-  overflow: hidden;
   border: 1px solid black; }
 
-/* line 5, _inputPanel.scss */
 .input {
+  overflow: hidden;
   grid-area: i; }
 
-/* line 12, _inputPanel.scss */
 textarea {
   font-size: 16px;
-  width: 29.15vw;
+  width: 28.75vw;
   height: 58.8vh;
   resize: none;
   border: none; }
 
-/* line 47, _variables.scss */
 .input, .output {
   width: 29.75vw;
   height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
-  overflow: hidden;
   border: 1px solid black; }
 
-/* line 3, _outputPanel.scss */
 .output {
-  overflow: scroll;
+  overflow: auto;
   grid-area: o; }
-  /* line 1, _htmlStyles.scss */
+  .output .input, .output .output {
+    width: 29.75vw;
+    height: 60vh;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid black; }
+  .output p {
+    text-align: justify; }
   .output ul, .output ol {
     padding-left: 30px; }
+  .output pre code {
+    font-family: monospace;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ddd; }
+  .output blockquote {
+    font-size: 0.9em;
+    font-style: italic;
+    margin: 0 20px; }
+  .output img {
+    margin: 10px;
+    max-width: 29.75vw; }
 
-/* line 13, _outputPanel.scss */
 .wordwrap {
   white-space: pre-wrap;
   /* CSS3 */
@@ -154,50 +152,39 @@ textarea {
   word-wrap: break-word;
   /* IE */ }
 
-/* line 47, _variables.scss */
 .input, .output {
   width: 29.75vw;
   height: 60vh;
   background-color: #fff;
   border-radius: 3px;
   padding: 10px;
-  overflow: hidden;
   border: 1px solid black; }
 
 @media only screen and (max-width: 1400px) {
-  /* line 23, _title.scss */
   .title-bar {
     height: 4.8vw; }
-    /* line 26, _title.scss */
     .title-bar h1 {
       font-size: 2vw; }
 
-  /* line 19, _main-container.scss */
   .main-container {
     width: 85vw;
     margin: 6vw auto 0 auto; }
 
-  /* line 22, _inputPanel.scss */
   .input {
     width: 42.25vw; }
 
-  /* line 26, _inputPanel.scss */
   textarea {
-    width: 41.65vw;
+    width: 40.25vw;
     height: 58.8vh; }
 
-  /* line 23, _outputPanel.scss */
   .output {
     width: 42.25vw; } }
 @media only screen and (max-width: 600px) {
-  /* line 36, _title.scss */
   .title-bar {
     height: 9vw; }
-    /* line 39, _title.scss */
     .title-bar h1 {
       font-size: 3.75vw; }
 
-  /* line 28, _main-container.scss */
   .main-container {
     width: 100vw;
     height: 60vh;
@@ -205,19 +192,15 @@ textarea {
     grid-template-rows: 70px 60vh 60vh;
     grid-template-areas: "b" "i" "o"; }
 
-  /* line 35, _inputPanel.scss */
   .input {
     width: 100vw;
     height: 60vh; }
 
-  /* line 40, _inputPanel.scss */
   textarea {
-    width: 98.8vw;
+    width: 93vw;
     height: 58.8vh; }
 
-  /* line 31, _outputPanel.scss */
   .output {
     width: 100vw;
     height: 60vh; } }
-
 /*# sourceMappingURL=markdown.css.map */

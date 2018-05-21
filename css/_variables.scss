@@ -1,12 +1,13 @@
 // COLOURS
 $white: #fff;
-$lightgrey: #333;
+$darkgrey: #333;
+$lightgrey: #ddd;
 $lightblue: #add8e6;
 
 
 
 // TITLE
-$title-bar-color: $lightgrey;
+$title-bar-color: $darkgrey;
 $title-bar-height: 3vw;
 $title-color: $lightblue;
 $title-font-size: 1.25vw;
@@ -38,6 +39,7 @@ $label-text-size: 1vw;
 
 // PANELS AND TEXTAREA
 $panel-height: $main-container-height;
+$panel-width: (($main-container-width - $main-container-grid-gap) / 2);
 $textarea-font-size: 16px;
 
 // RESPONSIVE DESIGN
@@ -45,11 +47,10 @@ $medium-screen-width: 1400px;
 $small-screen-width: 600px;
 
 %common {
-  width: (($main-container-width - $main-container-grid-gap) / 2);
+  width: $panel-width;
   height: $panel-height;
   background-color: $white;
   border-radius: 3px;
   padding: 10px;
-  overflow: hidden;
   border: 1px solid black;
 }
