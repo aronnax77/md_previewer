@@ -13,12 +13,57 @@ As a quick illustration unordered lists can be written as follows:
 	1. This is an indented ordered list
 	2. and so on.
 	
-Code snippets, blockquotes and images are also easily include.  For example a code snippet takes the form:
+Code snippets, blockquotes and images are also easily include.  
+
+Here is a code snippet in python:
 
 ``` python
 
-a = 10
-print(a)
+def bubbleSort(l):
+    """
+    An implementation of the bubble sore with optimisation
+    """
+    result = l[:]
+
+    lengthData = len(result)
+    sweep      = lengthData - 1
+
+    while sweep >= 0:
+        for i in range(sweep):
+            if result[i] > result[i+1]:
+                result[i], result[i+1] = result[i+1], result[i]
+        sweep -= 1
+
+    return result
+
+
+print(bubbleSort([33, 20, 12, 31, 2, 67]))
+
+
+```
+
+And an example in C:
+
+``` c
+
+#include <stdio.h>
+
+int main(void)
+{
+	int		a = 1;
+	void	try_to_change_it(int);
+
+	printf("%d\n", a);		/* 1 is printed */
+	try_to_change_it(a);
+	printf("%d\n", a);		/* 1 is printed again */
+
+	return (0);
+}
+
+void try_to_change_it(int a)
+{
+	a = 777;
+}
 
 ```
 
