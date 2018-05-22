@@ -36,7 +36,6 @@ new Vue({
     this.handleResize();
   },
   updated: function() {
-    console.log('changed');
     var code = document.querySelectorAll("code");
     for(var el = 0; el < code.length; el++) {
       hljs.highlightBlock(code[el]);
